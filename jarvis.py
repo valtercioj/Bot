@@ -2,7 +2,7 @@ from funcao import conv
 from funcao import google
 from funcao import site
 from funcao import wiki
-
+from funcao import trend
 print('''
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
      ola Valtercio bem vindo de volta. Estou a sua desposição.
@@ -33,7 +33,7 @@ if jarvis == 'quero conversar': # para conversar com o Bot
         conv() # funcao do chat
 if jarvis == 'faca uma busca na wikipedia' or jarvis == 'faça uma busca na wikipedia': # Bot pesquisa na wikipedia
 	wiki() # funcao da wikipedia
-       
+if jarvis == 'faca uma busca na trend':
+	trend()
     
     
-
