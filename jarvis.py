@@ -3,6 +3,7 @@ from funcao import google
 from funcao import site
 from funcao import wiki
 from funcao import trend
+from funcao import cpf
 print('''
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
      ola Valtercio bem vindo de volta. Estou a sua desposição.
@@ -35,5 +36,6 @@ if jarvis == 'faca uma busca na wikipedia' or jarvis == 'faça uma busca na wiki
 	wiki() # funcao da wikipedia
 if jarvis == 'faca uma busca na trend':
 	trend()
-    
+if jarvis == 'faca uma busca por cpf':
+	cpf()    
     
