@@ -4,6 +4,7 @@ from funcao import site
 from funcao import wiki
 from funcao import trend
 from funcao import cpf
+from funcao import whois
 print('''
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
      ola Valtercio bem vindo de volta. Estou a sua desposição.
@@ -38,4 +39,5 @@ if jarvis == 'faca uma busca na trend':
 	trend()
 if jarvis == 'faca uma busca por cpf':
 	cpf()    
-    
+if jarvis == 'faca um whois':
+	whois()  
