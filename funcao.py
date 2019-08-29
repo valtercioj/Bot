@@ -175,7 +175,7 @@ def cpf():
 	webbrowser.open(pesq)
 
 def whois():
-	data = raw_input("Digite o dominio que deseja: ")
+	data = str(input("Digite o dominio que deseja: "))
 	w = whois.whois(data)
 	print(w)
 
