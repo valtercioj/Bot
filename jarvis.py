@@ -4,7 +4,7 @@ from funcao import site
 from funcao import wiki
 from funcao import trend
 from funcao import cpf
-from funcao import whois
+
 print('''
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
      ola Valtercio bem vindo de volta. Estou a sua desposição.
