@@ -4,7 +4,6 @@ import os
 import sys
 import subprocess as s
 import wikipedia
-import whois
 
 def google(): # funcao para pesquisa no google ou youtube
         while True:
@@ -174,10 +173,6 @@ def cpf():
 	pesq = (cpf + b)
 	webbrowser.open(pesq)
 
-def whois():
-	data = str(input("Digite o dominio que deseja: "))
-	w = whois.whois(data)
-	print(w)
 
 
 
