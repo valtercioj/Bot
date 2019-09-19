@@ -1,9 +1,7 @@
-# Codigo em python3 usando buscas na web e conversas com o Bot
+# Python3 code using web searches and chatting with Bot
+wikipedia project => https://pypi.org/project/wikipedia/
 
-projeto wikipedia => https://pypi.org/project/wikipedia/
-
-# instalação da wikipedia
-
+# wikipedia installation
 pip install wikipedia
 
 pip3 install wikipedia
