@@ -1,6 +1,7 @@
 import os
 import sys
 import subprocess as s
+from googlesearch import search
 
 def site(): # funcao para abrir sites
     plataforma = sys.platform # ve o SO que sera rodado 
@@ -11,7 +12,7 @@ def site(): # funcao para abrir sites
 ##################################################################################
     
         p = str(input('onde deseja buscar, se for link direto so aperte enter: '))
-        for url in search(opcao+p, stop=2):
+        for url in search(opcao+p, stop=1):
 	        os.startfile(url)
 ######################################################################################       
         print()
@@ -24,7 +25,7 @@ def site(): # funcao para abrir sites
 ##################################################################################
       
         p = str(input('onde deseja buscar, se for link direto so aperte enter: '))
-        for url in search(opcao+p, stop=2):
+        for url in search(opcao+p, stop=1):
 	        os.startfile(url)
 ######################################################################################        
         print()
