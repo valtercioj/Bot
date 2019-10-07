@@ -26,7 +26,7 @@ def site(): # funcao para abrir sites
       
         p = str(input('onde deseja buscar, se for link direto so aperte enter: '))
         for url in search(opcao+p, stop=1):
-	        s.Popen(['xd-open'+url])
+	        s.Popen(['xdg-open',url])
 ######################################################################################        
         print()
         print('+=+'*20)
