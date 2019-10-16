@@ -15,9 +15,7 @@ def conv(): # funcao do chat
         while True: # laço que termina quando for digitado tchau
             perg = str(input('You: '))
             if perg == 'tchau':break
-            
-                    
-        
+
             for i in range(0,len(pergunta)):
                 if pergunta[i] == perg:
                     print('Bot: '+resp[i])
