@@ -6,7 +6,7 @@ def conv():
 	##########################################################################################
 	# ChatterBot
 	bot = ChatBot("Test") #read_only=True) # <- read to stop training the bot
-	chats = ['oi', 'ola', 'tudo bom?', 'tudo e voce?', 'estou bem obrigado.'] # chats
+	
 
 	trainer = ListTrainer(bot) # training
 	for arq in os.listdir('arq'):
