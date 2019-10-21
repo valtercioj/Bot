@@ -1,12 +1,13 @@
+from ins import ins
+ins()
+
 from chat import conv
 from google import google
 from web import site
 from wikipedia import wiki
 from trend import trend
 from cpf import cpf
-from ins import ins
 
-ins()
 print('''
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
      ola Valtercio bem vindo de volta. Estou a sua desposição.
