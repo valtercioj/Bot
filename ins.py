@@ -5,7 +5,7 @@ def ins():
     plat = sys.platform
     if plat == 'win32':
         try:
-            import google
+            from googlesearch import search
             import wikipedia
             import chatterbot
         except:
@@ -15,9 +15,10 @@ def ins():
         
     elif plat == 'linux':
         try:
-            import google
+            from googlesearch import search
             import wikipedia
-            import chatterbot
+            from chatterbot import ChatBot
+            from chatterbot.trainers import ListTrainer
         except:
             os.system('pip3 install google')
             os.system('pip3 install wikipedia')
