@@ -1,4 +1,17 @@
-import wikipedia
+import os
+import sys
+
+plat = sys.platform
+if plat == 'win32':
+	try:
+		import wikipedia
+	except:
+		os.system('pip install wikipedia')
+elif plat == 'linux':
+	try:
+		import wikipedia
+	except:
+		os.system('pip3 install wikipedia')
 
 def wiki(): # funcao para busca na wikipedia
 	lin = str(input('Deseja em portugues ou ingles? (pt/en) ')) # linguagem que sera usada	
