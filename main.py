@@ -1,6 +1,3 @@
-from ins import ins
-ins()
-
 from chat import conv
 from google import google
 from web import site
