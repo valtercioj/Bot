@@ -1,8 +1,17 @@
 import os
 import sys
 import subprocess as s
-from googlesearch import search
-
+plat = sys.platform
+if plat == 'win32':
+	try:
+		from googlesearch import search
+	except:
+		os.system('pip install google')
+elif plat == 'linux':
+	try:
+		from googlesearch import search
+	except:
+		os.system('pip3 install google')
 def site(): # funcao para abrir sites
     plataforma = sys.platform # ve o SO que sera rodado 
     if plataforma == 'win32': # para windows
