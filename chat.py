@@ -1,7 +1,20 @@
 from random import randint
-from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
 import os
+import sys
+plat = sys.platform
+if plat == 'win32':
+	try:		
+		from chatterbot import ChatBot
+		from chatterbot.trainers import ListTrainer
+	except:
+		os.system('pip install chatterbot')
+elif plat == 'linux':
+	try:		
+		from chatterbot import ChatBot
+		from chatterbot.trainers import ListTrainer
+	except:
+		os.system('pip3 install chatterbot')
+
 def conv():
 	##########################################################################################
 	# ChatterBot
@@ -28,4 +41,3 @@ def conv():
 		        print('bot: ',piada[n])
 		elif quest == 'tchau':break
 		
-
