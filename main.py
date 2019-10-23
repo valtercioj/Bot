@@ -1,9 +1,9 @@
-from chat import conv
-from google import google
-from web import site
-from wikipedia import wiki
-from trend import trend
-from cpf import cpf
+import chat
+import google
+import web
+import wikipedia
+import trend 
+
 
 print('''
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -28,14 +28,13 @@ if perg == 'jarvis': # comando para iniciar o Bot
 print() # para da espaços entre as linhas
 
 if jarvis == 'faca uma busca' or jarvis == 'faça uma busca': # Bot faz uma busca no google ou youtube        
-	google()
+	google.google()
 if jarvis == 'abra um site' or jarvis == 'quero abrir um site':  # Bot abrirá um site
-        site() # funcao para abrir sites
+        web.site() # funcao para abrir sites
 if jarvis == 'quero conversar': # para conversar com o Bot
-        conv() # funcao do chat
+        chat.conv() # funcao do chat
 if jarvis == 'faca uma busca na wikipedia' or jarvis == 'faça uma busca na wikipedia': # Bot pesquisa na wikipedia
-	wiki() # funcao da wikipedia
+	wikipedia.wiki() # funcao da wikipedia
 if jarvis == 'faca uma busca na trend':
-	trend()
-if jarvis == 'faca uma busca por cpf':
-	cpf()    
+	trend.trend()
+    
