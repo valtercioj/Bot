@@ -1,27 +1,33 @@
 from random import randint
 import os
 import sys
-plat = sys.platform
-if plat == 'win32':
-	try:		
-		from chatterbot import ChatBot
-		from chatterbot.trainers import ListTrainer
-	except:
-		os.system('pip install chatterbot')
-elif plat == 'linux':
-	try:		
-		from chatterbot import ChatBot
-		from chatterbot.trainers import ListTrainer
-	except:
-		os.system('pip3 install chatterbot')
+
 
 def conv():
+	plat = sys.platform
+	if plat == 'win32':
+		try:		
+			from chatterbot import ChatBot
+			from chatterbot.trainers import ListTrainer
+		except:
+			os.system('pip install chatterbot_corpus')
+	elif plat == 'linux':
+		try:		
+			from chatterbot import ChatBot
+			
+			from chatterbot.trainers import ListTrainer
+			
+		except:
+			os.system('pip3 install chatterbot_corpus')
 	##########################################################################################
 	# ChatterBot
+	from chatterbot import ChatBot
 	bot = ChatBot("Test") #read_only=True) # <- read to stop training the bot
+	from chatterbot.trainers import ListTrainer
+	trainer = ListTrainer(bot) # training
 	
 
-	trainer = ListTrainer(bot) # training
+	
 	for arq in os.listdir('arq'):
 		chats = open('arq/' + arq, 'r').readlines()
 
@@ -33,11 +39,12 @@ def conv():
 
 	
 	while True:
-		n = int(randint(0,len(piada)) # escolha de numeros aleatorios
 		quest = input('You: ') 
 		response = bot.get_response(quest) # bot response
 		print('Bot: ', response)
+		n = len(piada)
+		n1 = int(randint(0,n)) # escolha de numeros aleatorios
 		if quest == 'conte uma piada':
-		        print('bot: ',piada[n])
+			print('bot: ',piada[n1])
 		elif quest == 'tchau':break
 		
