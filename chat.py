@@ -33,7 +33,7 @@ def conv():
 
 	
 	while True:
-		n = int(randint(0,4)) # escolha de numeros aleatorios
+		n = int(randint(0,len(piada)) # escolha de numeros aleatorios
 		quest = input('You: ') 
 		response = bot.get_response(quest) # bot response
 		print('Bot: ', response)
