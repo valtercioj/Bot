@@ -10,14 +10,14 @@ def conv():
 			from chatterbot import ChatBot
 			from chatterbot.trainers import ListTrainer
 		except:
+			os.system('pip install chatterbot')
 			os.system('pip install chatterbot_corpus')
 	elif plat == 'linux':
 		try:		
 			from chatterbot import ChatBot
-			
 			from chatterbot.trainers import ListTrainer
-			
 		except:
+			os.system('pip3 install chatterbot')
 			os.system('pip3 install chatterbot_corpus')
 	##########################################################################################
 	# ChatterBot
