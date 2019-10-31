@@ -13,6 +13,8 @@ elif plat == 'linux':
 	except:
 		os.system('pip3 install google')
 def site(): # funcao para abrir sites
+    from googlesearch import search
+    
     plataforma = sys.platform # ve o SO que sera rodado 
     if plataforma == 'win32': # para windows
 
