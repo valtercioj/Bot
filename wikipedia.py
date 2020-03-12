@@ -6,12 +6,12 @@ if plat == 'win32':
 	try:
 		import wikipedia
 	except:
-		os.system('pip install wikipedia')
+		os.system('pip install wikipedia==1.4.0')
 elif plat == 'linux':
 	try:
 		import wikipedia
 	except:
-		os.system('pip3 install wikipedia')
+		os.system('pip3 install wikipedia==1.4.0')
 
 def wiki(): # funcao para busca na wikipedia
 	lin = str(input('Deseja em portugues ou ingles? (pt/en) ')) # linguagem que sera usada	
